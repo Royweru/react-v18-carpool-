@@ -1,3 +1,4 @@
+import { Hero } from "./components/hero"
 
 
 
@@ -5,8 +6,8 @@ function App() {
   
   return (
     <>
-     <div className=' text-4xl text-red-200 font-bold text-center w-full'>
-      CARPOOL OPENING
+     <div className='  w-full'>
+      <Hero />
      </div>
     </>
   )
