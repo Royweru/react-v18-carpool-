@@ -22,9 +22,9 @@ export const About = () => {
   return (
     <div className=' w-full flex bg-gradient-to-br justify-evenly from-zinc-900 via-slate-900 to-black mt-4 py-6 mb-4 ' id='about'>
          
-         <div className=' md:w-4/5 w-full  py-4 flex flex-col gap-4'>
+         <div className=' md:w-4/5 w-full  py-4 flex flex-col gap-y-4'>
           {aboutContent.map(content=>(
-              <div className=" flex justify-evenly p-2 bg-neutral-900 rounded-lg" key={content.id}>
+              <div className=" flex justify-evenly p-2 bg-neutral-900 rounded-lg gap-x-2" key={content.id}>
               <div className="w-full">
                <img src={content.img} alt="" className=" w-full h-[200px] rounded" />
               </div>
@@ -40,7 +40,7 @@ export const About = () => {
           ))}
            
          </div>
-        <div className="p-3 bg-[url('/images/slide1.jpeg')] h-[400px] md:block hidden  md:w-1/5 bg-center bg-cover rounded"/>
+        <div className="p-3 bg-[url('/images/slide1.jpeg')]  md:block hidden  md:w-1/5 bg-center bg-cover rounded"/>
         </div>
   )
 }
