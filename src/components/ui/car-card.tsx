@@ -1,6 +1,14 @@
-import React from 'react'
+
+export interface CarType{
+  make:string,
+  model:string,
+  mileage:string,
+  engine:string,
+  img:string
+}
 interface CarCardProps{
-  data:any
+  
+  data:CarType
 }
 export const CarCard = ({data}:CarCardProps) => {
   return (
