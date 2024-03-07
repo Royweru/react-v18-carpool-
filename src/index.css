@@ -6,6 +6,8 @@ body{
   scroll-behavior: smooth;
   scrollbar-width: 0.5px;
   scrollbar-color: tomato;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Snap scroll vertically */
 }
  
 @layer base {

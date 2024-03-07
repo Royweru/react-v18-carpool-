@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/imgs/nature/1.jpg",
-  "/imgs/nature/2.jpg",
-  "/imgs/nature/3.jpg",
-  "/imgs/nature/4.jpg",
-  "/imgs/nature/5.jpg",
-  "/imgs/nature/6.jpg",
-  "/imgs/nature/7.jpg",
+  "/images/slide1.jpeg",
+  "/images/slide2.jpeg",
+  "/images/slide3.jpeg",
+  "/images/slide4.jpeg",
+  "/images/slide5.jpeg",
+  "/images/slide6.jpeg",
+  "/images/slide7.jpeg",
 ];
 
 const ONE_SECOND = 1000;
@@ -55,7 +55,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative overflow-hidden bg-neutral-950 py-8">
+    <div className="relative w-full overflow-hidden bg-neutral-950 py-8">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -82,7 +82,7 @@ export const SwipeCarousel = () => {
 };
 
 const Images = ({ imgIndex }:{
-    imgIndex:any
+    imgIndex:unknown
 }) => {
   return (
     <>
@@ -108,7 +108,7 @@ const Images = ({ imgIndex }:{
 };
 
 const Dots = ({ imgIndex, setImgIndex }:{
-    imgIndex:any,setImgIndex:any
+    imgIndex:unknown,setImgIndex:any
 }) => {
   return (
     <div className="mt-4 flex w-full justify-center gap-2">

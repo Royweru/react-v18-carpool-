@@ -1,0 +1,34 @@
+export const whips=[
+    {
+        id:1,
+        img:"/images/car1.jpeg",
+        make:"Hyundai",
+        model:"wember",
+        mileage:"30,00",
+        engine:"3000cc"
+    },
+    {
+        id:2,
+        img:"/images/car2.jpeg",
+        make:"Lambo",
+        model:"veneno",
+        mileage:"30,00",
+        engine:"3000cc"
+    },
+    {
+        id:3,
+        img:"/images/car3.jpeg",
+        make:"Toyota",
+        model:"Camri",
+        mileage:"30,00",
+        engine:"3000cc"
+    },
+    {
+        id:4,
+        img:"/images/car4.jpeg",
+        make:"Nisssan",
+        model:"Patrol",
+        mileage:"30,00",
+        engine:"3000cc"
+    },
+]
