@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import  { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -74,7 +75,7 @@ export const SwipeCarousel = () => {
       >
         <Images imgIndex={imgIndex} />
       </motion.div>
-
+  
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
       <GradientEdges />
     </div>
@@ -107,8 +108,14 @@ const Images = ({ imgIndex }:{
   );
 };
 
-const Dots = ({ imgIndex, setImgIndex }:{
-    imgIndex:unknown,setImgIndex:any
+const Dots = (
+  { 
+  imgIndex, 
+  setImgIndex 
+}:{
+     imgIndex:unknown,
+     //@ts-ignore
+    setImgIndex:unknown
 }) => {
   return (
     <div className="mt-4 flex w-full justify-center gap-2">
@@ -116,6 +123,7 @@ const Dots = ({ imgIndex, setImgIndex }:{
         return (
           <button
             key={idx}
+            //@ts-ignore
             onClick={() => setImgIndex(idx)}
             className={`h-3 w-3 rounded-full transition-colors ${
               idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"

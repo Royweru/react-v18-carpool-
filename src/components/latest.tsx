@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import { CarCard } from './ui/car-card'
 import { whips } from '@/data/cars'

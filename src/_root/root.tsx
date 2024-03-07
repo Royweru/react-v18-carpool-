@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { SwipeCarousel } from "@/components/slides/swipe-carousel";
